@@ -35,9 +35,9 @@ Note: You may not get this result, it's different between each device.
 ## 📥 Installation
 
 #### 📄 policies.json
-1. In the [home page](https://gitlab.com/iahmed_7024-group/advancedfox), click on "[Firefox Release](https://gitlab.com/iahmed_7024-group/advancedfox/-/tree/main/Firefox%20Release)".
-2. Choose [Privacy & Security](https://gitlab.com/iahmed_7024-group/advancedfox/-/tree/main/Firefox%20Release/Privacy%20&%20Security)".
-3. Choose "[policies](https://gitlab.com/iahmed_7024-group/advancedfox/-/tree/main/Firefox%20Release/Privacy%20&%20Security/policies)".
+1. In the [home page](https://gitlab.com/iahmed_7024-group/advancedfox), click on "[Firefox Release](https://gitlab.com/iahmed_7024-group/advancedfox/-/tree/main/Firefox%20ESR%20140)".
+2. Choose [Privacy & Security](https://gitlab.com/iahmed_7024-group/advancedfox/-/tree/main/Firefox%20ESR%20140/Privacy%20&%20Security)".
+3. Choose "[policies](https://gitlab.com/iahmed_7024-group/advancedfox/-/tree/main/Firefox%20ESR%20140/Privacy%20&%20Security/policies)".
 4. Choose the privacy level that you want to use.
 4. Click on "policies.json", then download it by clicking on the download icon.
 5. Copy the file.
@@ -56,9 +56,9 @@ Note: You may not get this result, it's different between each device.
 Go to "C:\Program Files\Mozilla Firefox\", then go to "distribution" folder and paste the file there.
 
 #### 📜 user.js
-1. In the [home page](https://gitlab.com/iahmed_7024-group/advancedfox), click on "[Firefox Release](https://gitlab.com/iahmed_7024-group/advancedfox/-/tree/main/Firefox%20Release)".
-2. Choose "[Performance](https://gitlab.com/iahmed_7024-group/advancedfox/-/tree/main/Firefox%20Release/Performance)" if you want Firefox to be fast, or choose "[Privacy & Security](https://gitlab.com/iahmed_7024-group/advancedfox/-/tree/main/Firefox%20Release/Privacy%20&%20Security)" if you want to block ads and trackers and resist fingerprinting.
-3. Choose "[user.js](https://gitlab.com/iahmed_7024-group/advancedfox/-/tree/main/Firefox%20Release/Privacy%20&%20Security/user.js)".
+1. In the [home page](https://gitlab.com/iahmed_7024-group/advancedfox), click on "[Firefox Release](https://gitlab.com/iahmed_7024-group/advancedfox/-/tree/main/Firefox%20ESR%20140)".
+2. Choose "[Performance](https://gitlab.com/iahmed_7024-group/advancedfox/-/tree/main/Firefox%20ESR%20140/Performance)" if you want Firefox to be fast, or choose "[Privacy & Security](https://gitlab.com/iahmed_7024-group/advancedfox/-/tree/main/Firefox%20ESR%20140/Privacy%20&%20Security)" if you want to block ads and trackers and resist fingerprinting.
+3. Choose "[user.js](https://gitlab.com/iahmed_7024-group/advancedfox/-/tree/main/Firefox%20ESR%20140/Privacy%20&%20Security/user.js)".
 4. Choose your operating system.
 5. Choose the privacy level that you want to use.
 6. Click on the user.js file, then click on the download icon.
