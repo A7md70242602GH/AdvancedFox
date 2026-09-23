@@ -6,13 +6,16 @@
 **AdvancedFox** is a project that provides some policies.json and user.js files that you can add it to Firefox.
 
 ## ⚔️ All policies and user.js types
-Files/Levels | 📄 policies | 📜 user.js (Privacy)
+Files/Levels | 📄 policies (Privacy & Security) | 📜 user.js (Privacy & Security)
 -|-|-
 **💪🏻 Strong** | ✅ _Sets SearXNG as the default search engine, and installs uBlock Origin and NoScript by default._ | ✅ _Blocks ads and trackers and fingerprinting by default._
 **🛡️ Medium** | ✅ _Sets SearXNG as the default search engine, and installs uBlock Origin by default._ | ✅ _Blocks ads and trackers and fingerprinting by default._
 **🗡️ Weak** | ✅ _Sets SearXNG as the default search engine by default._ | ✅ _Blocks ads and trackers by default._
 
-**There is a user.js for performance too, but it doesn't have any levels.**
+### ⚙️ Other policies and user.js types
+1. **Disable AI Features.**
+2. **DMT.**
+3. **Performance.**
 
 ## ✨ Features
 - [x] **Blocking ads by default.**
@@ -25,49 +28,61 @@ Files/Levels | 📄 policies | 📜 user.js (Privacy)
 - [ ] Able to choose how much performance level you want.
 - [x] **Setting SearXNG as the default search engine.**
 - [x] **Installing uBlock Origin by default.**
+- [x] **Disabling Mozilla telemetry.**
+- [x] **Disabling AI Features.**
 
-**After installing the policies.json and user.js files with strong level, this is the result in one of the best websites for testing web tracking:**
+**After installing the policies.json (Privacy & Security) and user.js (Privacy & Security) files with strong level, this is the result in one of the best websites for testing web tracking:**
 
 ![EFF-Cover your tracks](images/EFF-CYT.png){width=988 height=745}
 
 Note: You may not get this result, it's different between each device.
 
+## 🚫 Fingerprinting Problems in Firefox
+
+**There are 3 things that prevent your browser fingerprint from being non-unique**:
+
+Objects | Reasons
+-|-
+**Fonts** (Linux only) | _A structural restriction in Linux support for_ `font-visibility`_._
+**Cores** | _RFP sets cores count to 2 (when enabled) according to a statistic in 2017 by Mozila, but this statistic is old, and this value is nearly-unique now, the value should be 4._
+**DNT** | _Enhanced Tracking Protection enables Do Not Track automaticlly and can't be disabled with keeping ETP enabled, and the problem with DNT is making the browser more uniquer._
+
+**These things can't be resolved by a policies.json or user.js files, the resolve key is in Mozilla's hand.**
+
+If these issues resolved, Firefox with this user.js will show you "**Your browser has a non-unique fingerprinting.**" in Cover Your Tracks test.
+
 ## 📥 Installation
 
 #### 📄 policies.json
-1. In the [home page](https://gitlab.com/iahmed_7024-group/advancedfox), click on "[Firefox ESR 140](https://gitlab.com/iahmed_7024-group/advancedfox/-/tree/main/Firefox%20ESR%20140)".
-2. Choose [Privacy & Security](https://gitlab.com/iahmed_7024-group/advancedfox/-/tree/main/Firefox%20ESR%20140/Privacy%20&%20Security)".
-3. Choose "[policies](https://gitlab.com/iahmed_7024-group/advancedfox/-/tree/main/Firefox%20ESR%20140/Privacy%20&%20Security/policies)".
-4. Choose the privacy level that you want to use.
-4. Click on "policies.json", then download it by clicking on the download icon.
-5. Copy the file.
-6. Putting the file in the right position:
+1. Go to "[AFDC](https://gitlab.com/iahmed_7024-group/advancedfox/-/wikis/AFDC)".
+2. In "Privacy & Security" section, choose the privacy level that you want to use.
+3. Click on "policies.json" with the level that you chose.
+4. After downloading, copy the file.
+5. Putting the file in the right position:
 
 ###### Linux:
-**Official Build**: Go to the installation directory (it may be in /opt/firefox/), then go to "distribution" folder and paste the file there.
+**Official Build**: Go to the installation directory (it may be in /opt/firefox/), then go to "distribution" folder (create it if not available) and paste the file there.
 
-**Package Manager**: Go to "/usr/lib/firefox/", then go to "distribution" folder and paste the file there.
+**Package Manager**: Go to "/usr/lib/firefox/", then go to "distribution" folder (create it if not available) and paste the file there.
 
 **Commands** (you have to run it with privilege permissions):
 1. `mkdir /opt/firefox-esr/distribution/ && mv <policies.json file location> /opt/firefox-esr/distribution/`.
 2. `mkdir /usr/lib/firefox/distribution/ && mv <policies.json file location> /usr/lib/firefox/distribution/`.
 
 ###### Windows:
-Go to "C:\Program Files\Mozilla Firefox\", then go to "distribution" folder and paste the file there.
+Go to "C:\Program Files\Mozilla Firefox\", then go to "distribution" folder (create it if not available) and paste the file there.
 
 #### 📜 user.js
-1. In the [home page](https://gitlab.com/iahmed_7024-group/advancedfox), click on "[Firefox ESR 140](https://gitlab.com/iahmed_7024-group/advancedfox/-/tree/main/Firefox%20ESR%20140)".
-2. Choose "[Performance](https://gitlab.com/iahmed_7024-group/advancedfox/-/tree/main/Firefox%20ESR%20140/Performance)" if you want Firefox to be fast, or choose "[Privacy & Security](https://gitlab.com/iahmed_7024-group/advancedfox/-/tree/main/Firefox%20ESR%20140/Privacy%20&%20Security)" if you want to block ads and trackers and resist fingerprinting.
-3. Choose "[user.js](https://gitlab.com/iahmed_7024-group/advancedfox/-/tree/main/Firefox%20ESR%20140/Privacy%20&%20Security/user.js)".
-4. Choose your operating system.
-5. Choose the privacy level that you want to use.
-6. Click on the user.js file, then click on the download icon.
-7. Once it's downloaded, rename it to user.js.
-8. Open Firefox.
-9. Type in the search bar: about:profiles.
-10. Choose the profile that you want to add the user.js into it and then click on Open Directory in Root Directory section.
-11. Paste the user.js.
-12. Restart Firefox.
+1. Go to "[AFDC](https://gitlab.com/iahmed_7024-group/advancedfox/-/wikis/AFDC)".
+2. In "Privacy & Security" section, choose your operating system.
+3. Choose the privacy level that you want to use.
+4. Click on the user.js file with the level that you chose.
+5. Once it's downloaded, rename it to user.js.
+6. Open Firefox.
+7. Type in the search bar: about:profiles.
+8. Choose the profile that you want to add the user.js into it and then click on Open Directory in Root Directory section.
+9. Paste the user.js.
+10. Restart Firefox.
 
 ## 🛑 Deletion
 
