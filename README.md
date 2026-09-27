@@ -18,18 +18,18 @@ Files/Levels | 📄 policies (Privacy & Security) | 📜 user.js (Privacy & Secu
 3. **Performance.**
 
 ## ✨ Features
-- [x] **Blocking ads by default.**
-- [x] **Blocking trackers by default.**
-- [x] **Resisting fingerprinting.**
-- [x] **Linux and Windows support.**
-- [x] **Free and open source project.**
-- [x] **Able to choose how much privacy protection you want.**
-- [x] **Better performance.**
-- [ ] Able to choose how much performance level you want.
-- [x] **Setting SearXNG as the default search engine.**
-- [x] **Installing uBlock Origin by default.**
-- [x] **Disabling Mozilla telemetry.**
-- [x] **Disabling AI Features.**
+- [x] **_Blocking ads by default._**
+- [x] **_Blocking trackers by default._**
+- [x] **_Resisting fingerprinting._**
+- [x] **_Linux and Windows support._**
+- [x] **_Free and open source project._**
+- [x] **_Able to choose how much privacy protection you want._**
+- [x] **_Better performance._**
+- [ ] _Able to choose how much performance level you want._
+- [x] **_Setting SearXNG as the default search engine._**
+- [x] **_Installing uBlock Origin by default._**
+- [x] **_Disabling Mozilla telemetry._**
+- [x] **_Disabling AI Features._**
 
 **After installing the policies.json (Privacy & Security) and user.js (Privacy & Security) files with strong level, this is the result in one of the best websites for testing web tracking:**
 
