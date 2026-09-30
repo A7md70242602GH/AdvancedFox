@@ -14,7 +14,7 @@ Files/Levels | 📄 policies (Privacy & Security) | 📜 user.js (Privacy & Secu
 
 ### ⚙️ Other policies and user.js types
 1. **Disable AI Features.**
-2. **DMT.**
+2. **Disable Mozilla Telemetry.**
 3. **Performance.**
 
 ## ✨ Features
@@ -39,19 +39,22 @@ Note: You may not get this result, it's different between each device.
 
 ## 🚫 Fingerprinting Problems In Firefox ESR 140
 
-**There are 3 things that prevent your browser fingerprint from being non-unique**:
+**There are 4 things that prevent your browser fingerprint from being non-unique**:
 
-Objects | Reasons
--|-
-**Fonts** (Linux only) | _A structural restriction in Linux support for_ `font-visibility`_._
-**Cores** | _RFP sets cores count to 2 (when enabled) according to a statistic in 2017 by Mozila, but this statistic is old, and this value is nearly-unique now, the value should be 4._
-**Do Not Track** | _Enhanced Tracking Protection enables "Do Not Track" sign ("Do Not Track" is a sign that send "Do Not Track" sign to any website you enter) automaticlly and can't be disabled with keeping Enhanced Tracking Protection enabled, and the problem with "Do Not Track" sign is making the browser more uniquer._
+| Objects | Reasons |
+|---------|---------|
+| **Cores** | _RFP sets cores count to 2 (when enabled) according to a statistic in 2017 by Mozila, but this statistic is old, and this value is nearly-unique now, the value should be 4._ |
+| **Do Not Track header** | _Enhanced Tracking Protection enables "Do Not Track" sign ("Do Not Track" is a sign that send "Do Not Track" sign to any website you enter) automaticlly and can't be disabled with keeping Enhanced Tracking Protection enabled, and the problem with "Do Not Track" sign is making the browser more uniquer._ |
+| **Fonts** (Linux only) | _A structural restriction in Linux support for_ `font-visibility`_._ |
+| **Touch Support** (Windows only) | A bug exists in Firefox ESR 140 on Windows, but it has been fixed in Firefox ESR 153. However, this doesn't mean that ESR 153 is better; in fact, it is worse because it has fewer users than ESR 140, and the result will likely be “nearly-unique” rather than “Partial Protection”. |
+
+**Note:** Cores, Do Not Track header and Touch Support (Windows only) issues has been fixed in Firefox ESR 153 but it's not the best because it has fewer users than Firefox ESR 140.
 
 **These things can't be resolved by a policies.json or user.js files, the resolve key is in Mozilla's hand.**
 
 If these issues resolved, Firefox with this user.js will show you "**Your browser has a non-unique fingerprint.**" in Cover Your Tracks test.
 
-Here is a [discussion](https://connect.mozilla.org/t5/discussions/resistfingerprinting-inadvertently-increases-uniqueness-dnt-auto/m-p/138870#M56435) that I made and talks about 2 of the 3 problems (Cores and DNT problems).
+Here is a [discussion](https://connect.mozilla.org/t5/discussions/resistfingerprinting-inadvertently-increases-uniqueness-dnt-auto/m-p/138870#M56435) that I made and talks about 2 of the 4 problems (Cores and DNT problems).
 
 ## 📥 Installation
 
